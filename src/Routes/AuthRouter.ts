@@ -1,12 +1,13 @@
-import { Router } from "express";
-import { Authenticate } from "../../utils/authenticate";
-import AuthController from "./AuthController";
+import { Response, Router } from "express";
+import { Authenticate } from "../Libraries/authenticate";
+import AuthController from "../Controllers/AuthController";
 
 export default function AuthRouter(): Router {
     const router = Router();
     const authController = new AuthController();
-    router.get('/', ()=>{
+    router.get('/auth/', (res: Response)=>{
         console.log('AuthRouter');
+        res.send({message: 'Hello'})
     });
     router.post("/auth/login", authController.postLogin);
     router.post('/auth/signup', authController.postSignup);

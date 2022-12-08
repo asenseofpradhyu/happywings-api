@@ -1,7 +1,7 @@
 import bodyParser from 'body-parser';
 import dotenv from 'dotenv';
 import express from 'express';
-import AuthRouter from './modules/Auth/AuthRouter';
+import AuthRouter from './Routes/AuthRouter';
 
 dotenv.config();
 const App = express();

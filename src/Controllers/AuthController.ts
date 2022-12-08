@@ -1,10 +1,10 @@
 import { Request } from "express";
 import { Response } from "express";
-import prisma from "../../utils/prisma";
+import prisma from "../Libraries/prisma";
 // import { NextFunction } from "express";
 import "argon2";
 import { hash, verify } from "argon2";
-import { issueJWT } from "../../utils/authenticate";
+import { issueJWT } from "../Libraries/authenticate";
 
 
 export default class AuthController {
@@ -48,9 +48,9 @@ export default class AuthController {
         name: req.body.name,
       },
     });
-    console.log(prisma);
+    // console.log(prisma);
 
-    res.json({ "message": "signup" });
+    return res.json({ "message": "signup" });
   }
 
   public async getLoggedUser(req:Request, res:Response) {
