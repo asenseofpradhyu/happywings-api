@@ -1,0 +1,59 @@
+[
+  {
+    "_id": "210f5a0a-1102-4879-bbf9-f9bd25624404",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/auth/login_mobile",
+    "url": "http://localhost:3000/api/auth/login_mobile",
+    "method": "GET",
+    "sortNum": 0,
+    "created": "2022-12-11T10:18:55.197Z",
+    "modified": "2022-12-11T10:18:55.197Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"mobile\": \"+917405055365\"\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "62c3b8ab-7c83-4be1-a42d-125f63a0e1e9",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/auth/login_mobile",
+    "url": "http://localhost:3000/api/auth/login_mobile",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-12-11T10:18:59.601Z",
+    "modified": "2022-12-11T10:40:09.394Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"mobile\": \"+917405055365\",\n  \"otp\": 55608\n}",
+      "form": []
+    },
+    "tests": []
+  },
+  {
+    "_id": "93144904-5eba-4df8-84ac-52458b14487b",
+    "colId": "history",
+    "containerId": "",
+    "name": "http://localhost:3000/api/auth/login_mobile_verify",
+    "url": "http://localhost:3000/api/auth/login_mobile_verify",
+    "method": "POST",
+    "sortNum": 0,
+    "created": "2022-12-11T10:31:19.493Z",
+    "modified": "2022-12-11T10:40:40.505Z",
+    "headers": [],
+    "params": [],
+    "body": {
+      "type": "json",
+      "raw": "{\n  \"mobile\": \"+917405055365\",\n  \"otp\": 47714\n}",
+      "form": []
+    },
+    "tests": []
+  }
+]

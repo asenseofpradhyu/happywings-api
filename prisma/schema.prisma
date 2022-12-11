@@ -14,6 +14,8 @@ model User{
   id String @id @default(uuid())
   name String
   email String @unique
+  mobile  String @unique
+  otp Int?
   password String
   posts Post[]
 }
